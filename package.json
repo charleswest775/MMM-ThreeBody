@@ -1,7 +1,7 @@
 {
   "name": "mmm-threebody",
   "version": "1.0.0",
-  "description": "MagicMirror² module: The three-body problem as a long exposure: Burrau's Pythagorean problem, Lagrange's unstable triangle and the stable figure-eight, each with a ghost 10⁻⁶ away.",
+  "description": "MagicMirror² module: the three-body problem as a long exposure, Burrau's Pythagorean problem, Lagrange's unstable triangle and the stable figure-eight in turn, each with a ghost started 10⁻⁶ away, drawn for a Raspberry Pi without a GPU.",
   "main": "MMM-ThreeBody.js",
   "scripts": {
     "test": "node --test"
@@ -11,6 +11,7 @@
     "chaos",
     "chaos theory",
     "three-body problem",
+    "n-body",
     "gravity",
     "orbits",
     "physics",
