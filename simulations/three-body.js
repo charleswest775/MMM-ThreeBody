@@ -222,7 +222,7 @@
 			let apart = 0;
 			for (let i = 0; i < 6; i++) apart = Math.max(apart, Math.abs(s[i] - g[i]));
 			const dE = Math.abs((this.sys.energy() - this.E0) / this.E0);
-			const sci = (root.ChaosCommon || require("./common.js")).sci;
+			const sci = (root.ThreeBodyCommon || require("./common.js")).sci;
 			return `t = ${this.T.toFixed(1)}    ghost ${sci(apart)} away    closest approach so far ${sci(this.sys.closest)}\n` +
 				`energy kept to ${sci(dE)}    ${this.sys.steps.toLocaleString("en")} steps`;
 		}
@@ -231,13 +231,13 @@
 	ThreeBody.equations = (sc) => [
 		"r̈<sub>i</sub> = Σ<sub>j≠i</sub> G m<sub>j</sub> <span class=\"frac\"><span>r<sub>j</sub> − r<sub>i</sub></span><span>|r<sub>j</sub> − r<sub>i</sub>|³</span></span>, &nbsp; G = 1",
 		`masses ${sc.m.join(", ")} · the ghost (faint) starts 10⁻⁶ away · Dormand–Prince 5(4), tolerance 10⁻¹²`,
-		`<span class="chaos-note">${sc.note}</span>`
+		`<span class="threebody-note">${sc.note}</span>`
 	];
 	ThreeBody.System = System;
 	ThreeBody.SCENES = SCENES;
 	ThreeBody.info = { title: "The three-body problem", equations: [] };
 
-	root.ChaosSimulations = root.ChaosSimulations || {};
-	root.ChaosSimulations.threeBody = ThreeBody;
+	root.ThreeBodySimulations = root.ThreeBodySimulations || {};
+	root.ThreeBodySimulations.threeBody = ThreeBody;
 	if (typeof module !== "undefined") module.exports = { ThreeBody };
 })(typeof window !== "undefined" ? window : globalThis);

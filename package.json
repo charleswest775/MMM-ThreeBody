@@ -1,8 +1,8 @@
 {
-  "name": "mmm-chaostheory",
+  "name": "mmm-threebody",
   "version": "1.0.0",
-  "description": "MagicMirror² module: chaos theory in motion, physically correct and cheap enough for a Raspberry Pi: the Lorenz attractor, diverging double pendulums, fractal basins, the logistic map, symmetric icons, the three-body problem, chaotic billiards and rule 30, each with its equations and live numbers.",
-  "main": "MMM-ChaosTheory.js",
+  "description": "MagicMirror² module: The three-body problem as a long exposure: Burrau's Pythagorean problem, Lagrange's unstable triangle and the stable figure-eight, each with a ghost 10⁻⁶ away.",
+  "main": "MMM-ThreeBody.js",
   "scripts": {
     "test": "node --test"
   },
@@ -10,19 +10,15 @@
     "MagicMirror",
     "chaos",
     "chaos theory",
-    "double pendulum",
-    "Lorenz attractor",
     "three-body problem",
-    "fractal",
-    "logistic map",
-    "billiards",
-    "rule 30",
+    "gravity",
+    "orbits",
     "physics",
     "animation"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/charleswest775/MMM-ChaosTheory.git"
+    "url": "https://github.com/charleswest775/MMM-ThreeBody.git"
   },
   "author": "Charles West",
   "license": "MIT"
